@@ -27,7 +27,7 @@ public class Cell {
 	}
 
 	// getter/setter alive
-	public boolean getAlive() {
+	public boolean isAlive() {
 		return alive;
 	}
 
@@ -90,7 +90,7 @@ public class Cell {
 					continue;
 				}
 				if (r >= 0 && r < gridArray.length &&  c >= 0 && c < gridArray[0].length) {
-	                    if (gridArray[r][c].getAlive() == true) {
+	                    if (gridArray[r][c].isAlive() == true) {
 	                        count++;
 	                    }
 	                }
